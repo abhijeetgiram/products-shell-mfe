@@ -3,13 +3,17 @@
 ## Localhost URLs
 
 Products Shell MFE URL: http://localhost:5000/
+
 Products Remote MFE URL: http://localhost:5001/
+
 Orders Remote MFE URL: http://localhost:5002/
 
 ## Production URLs
 
 Products Shell MFE URL: https://products-shell-mfe.vercel.app/
+
 Products Remote MFE URL: https://products-remote-mfe.vercel.app/
+
 Orders Remote MFE URL: https://orders-remote-mfe.vercel.app/
 
 # Local Setup
