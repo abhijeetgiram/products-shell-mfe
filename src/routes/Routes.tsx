@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "../components/ErrorBoundary";
+import { useTheme } from "../context/ThemeContext";
 
 const ProductListPage = React.lazy(
   () => import("products_remote_mfe/ProductListPage")
@@ -10,6 +11,8 @@ const OrderListPage = React.lazy(
 );
 
 const AppRoutes: React.FC = () => {
+  const { theme } = useTheme();
+  const routeClass = theme === "dark" ? "dark-route" : "route";
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
@@ -37,7 +40,9 @@ const AppRoutes: React.FC = () => {
         />
         <Route
           path="*"
-          element={<div>Select a module from the sidebar.</div>}
+          element={
+            <div className={routeClass}>Select a module from the sidebar.</div>
+          }
         />
       </Routes>
     </Suspense>

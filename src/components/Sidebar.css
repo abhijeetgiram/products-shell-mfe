@@ -1,0 +1,8 @@
+.sidebar-link {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.5rem;
+  &.dark a {
+    color: white;
+  }
+}

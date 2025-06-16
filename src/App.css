@@ -50,3 +50,19 @@
   border-radius: 0.375rem;
   cursor: pointer;
 }
+
+.route {
+  padding: 1.5rem;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.dark-route {
+  padding: 1.5rem;
+  min-height: 100vh;
+  background-color: #1f2937;
+  font-size: 1.5rem;
+  color: white;
+}

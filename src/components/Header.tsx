@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
+import "./Header.css";
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
       }}
     >
       <h1>Modular Dashboard</h1>
-      <button onClick={toggleTheme}>
+      <button className="button" onClick={toggleTheme}>
         Switch to {theme === "light" ? "Dark" : "Light"} Theme
       </button>
     </header>
